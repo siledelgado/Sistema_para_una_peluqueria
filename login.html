@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link href="./src/img/entrar.png" rel="shortcut icon" type="image/x-icon" />
+      <!-- Color para la barra de direccion del navegador (para dispositivos moviles) -->
+      <meta name="theme-color" content="black">
+      <!-- Oculta la barra de direccion al crear un acceso directo -->
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <!-- Meta Tag responsive -->
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/alertify.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <div class="container mt-5 pt-5">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+              <div class="mx-auto">                
+                <img src="./src/img/login.png" class="img-200" alt="">
+              </div>
+              <form class="" action="index.html" method="post">
+              <div class="card-body">
+
+                  <div class="mb-3">
+                    <i class="bi bi-person-fill icon-lg"></i>
+                    <label for="exampleFormControlInput1" class="form-label">Usuario</label>
+                    <input type="text" required class="form-control" id="user" placeholder="Usuario" autocomplete="off">
+                  </div>
+                  <div class="mb-3">
+                    <i class="bi bi-lock-fill icon-lg"></i>
+                    <label for="exampleFormControlTextarea1" class="form-label">Contraseña</label>
+                    <input type="password" required class="form-control" id="pass" placeholder="Contraseña">
+                  </div>
+              </div>
+              <div class="card-footer">
+                <div class="d-grid gap-2">
+                  <button type="button" class="btn btn-bloc btn-primary" id="enviar"> <i class="bi bi-key icon-lg"></i> Login</button>
+                </div>
+              </div>
+            </form>
+            </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/sweetalert2.all.min.js"> </script>
+    <script type="text/javascript" src="./js/alertify.min.js"> </script>
+    <script type="text/javascript" src="./js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="./js/funciones.js"></script>
+    <script type="text/javascript" src="./js/registros.js"></script>
+    <script type="text/javascript" src="./js/login.js"></script>
+
+    <script type="text/javascript" >
+      
+      
+      if(getCookie('usuario') != ''){
+        window.location.href = "./index.html";
+      }
+
+      
+    </script>
+
+
+  </body>
+</html>
